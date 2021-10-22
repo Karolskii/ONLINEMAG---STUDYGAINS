@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* font-family: 'Fugaz One', cursive;
+font-family: 'Open Sans', sans-serif; */
+body {
+  background-color: #f0f0f0;
+  background-size: cover;
+  word-wrap: break-word;
+   !important;
+  color: white;
+  font-family: 'Fugaz One', 'Open Sans';
+    background-image: url(../images/applewatch.jpg);
+}
+
+/*---------------- MENU M. DROPDOWN-------------------- */
+nav {
+  width: 100%;
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: inherit;
+}
+
+#logo {
+  display: block;
+  float: left;
+  /* Responsiv logo */
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.rightside {
+  float: right;
+  justify-content: flex-end;
+}
+
+/* MENU STYLING */
+nav li {
+  float: left;
+}
+
+nav ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  font-family: 'Fugaz One', 'Open Sans';
+  color: white;
+  font-size: 15px;
+  padding-top: 40px;
+  padding-bottom: 27px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+nav ul li .red:hover {
+  color: #C30000;
+}
+
+nav ul li ul li {
+  width: 200px;
+}
+
+nav ul li ul li a {
+  padding: 15px;
+}
+
+nav ul li ul li a:hover {
+  background-color: #C30000;
+}
+
+/*selve drop funktion*/
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 1);
+  color: inherit;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+/*drop slut*/
+/* Responsiv */
+.toggle, [id^=drop] {
+  display: none;
+}
+
+#main-toggle {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+/* hamburger knap */
+.nav-icon {
+  display: block;
+  height: 34px;
+  width: auto;
+  position: relative;
+}
+
+/* MOBIL MEDIA QUERY */
+@media all and (max-width : 900px) {
+
+#coverbillede {
+  display: none;
+}
+
+.newsbox {
+margin-top: 100px;
+}
+
+  nav {
+    margin: 0;
+  }
+
+  nav ul {
+    float: none;
+  }
+
+  .toggle+a,
+  .menu {
+    display: none;
+  }
+
+  /*DROP LISTS STYLING (MOBIL) */
+  .toggle {
+    display: block;
+    background-color: black;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+    border: none;
+    font-family: 'Fugaz One', 'Open Sans';
+  }
+
+  /* DROP LLISTS M. HOVER STYLING (MOBIL) */
+  .toggle:hover {
+    color: #C30000;
+  }
+
+  [id^=drop]:checked+ul {
+    display: block;
+  }
+
+  nav ul li {
+    display: block;
+    width: 100%;
+  }
+
+  nav ul li ul {
+    float: none;
+    position: static;
+    width: 100vh;
+  }
+
+  /* T1 Drop down styling */
+  nav ul li a {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100vh;
+    padding: 10px;
+  }
+
+  .t2 {
+    width: 100px;
+  }
+
+  /* fjerner hover drop på mobil */
+  nav ul ul li:hover>ul,
+  nav ul li:hover>ul {
+    display: none;
+  }
+
+  /* Log in og tilmeld knap styling */
+  .rightside {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .red {
+    font-size: 20px
+  }
+}
+
+/* MENU SLUT*/
+
+/* -------------------------- STORT LOGO M SLOGAN -------------------*/
+
+
+
+#text {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+padding: 150px;
+margin: 0 auto;
+display: flex;
+}
+
+
+
+
+/* -------------------------- MAIN ---------------------------- */
+article h1 {
+  font-size: 40px;
+}
+
+article  {
+  padding-top: 50px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+  color: black;
+  padding-left: 50px;
+    padding-right: 50px;
+  padding-bottom: 150px;
+margin-bottom: 100px;
+}
+
+@media all and (max-width : 900px) {
+
+article p,h1,h2 {
+  width: 100%;
+    max-width: 1400px;
+    height: auto;
+}
+
+}
+
+#cursive {
+  font-style: italic;
+}
+
+#video {
+  height: auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+#madpakke {
+  width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+/* -------------------------- NYHEDSBREV ----------------------- */
+#streg {
+  height: 1px;
+  background-color: black;
+}
+
+.nyhedsbrev {
+padding-top: 300px;
+padding-bottom: 300px;
+display: block;
+background-color: White;
+color: black;
+}
+
+.nyhedsbrev p {
+  font-family: 'Open Sans', sans-serif;
+    font-size:1.5vw;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.nyhedsbrev h1 {
+  font-size:4vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.wrapper {
+display: flex;
+justify-content: center;
+margin-left: 50px;
+margin-right: 50px;
+}
+
+.wrapper label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: center;
+}
+.wrapper input {
+  display: inline-block;
+  float: left;
+}
+
+.inputfelt {
+  padding: 10px;
+}
+
+#tilmeldknap {
+  padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #C30000;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    font-family: 'Fugaz One','Open Sans';
+    letter-spacing: 2px;
+}
+
+#tilmeldknap:hover {
+  background-color: black;
+}
+/* -------------------------- FOOTER ----------------------- */
+footer {
+font-family: sans-serif;
+padding-right: 200px;
+padding-left: 100px;
+padding-top: 50px;
+padding-bottom: 50px;
+background-color: black;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+#kontakt {
+  font-weight: 800;
+}
+
+.socials {
+  height: auto;
+  width: 50px;
+  display: flex;
+}
+
+.medier{
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.medier:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  width: 40px;
+}
